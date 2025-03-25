@@ -2,7 +2,6 @@ package org.contour2dplot;
 
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -250,7 +249,7 @@ public class Contour2DMap extends Pane {
     }
 
     public ArrayList<Double> linspace(double start, double stop, int n, boolean roundToInt) {
-        ArrayList<Double> result = new ArrayList();
+        ArrayList<Double> result = new ArrayList<>();
         double step = (stop-start)/(n-1);
         for(int i = 0; i <= n-2; i++) {
             if (roundToInt) {
